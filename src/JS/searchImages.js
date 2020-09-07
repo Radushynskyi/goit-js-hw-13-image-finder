@@ -30,7 +30,7 @@ function loadMoreBtnHandler() {
     .then(updateItemsMarkup)
     .catch(error => console.warn(error));
   window.scrollTo({
-    top: 20,
+    top: window.scrollY -600,
     behavior: 'smooth',
   });
 }
